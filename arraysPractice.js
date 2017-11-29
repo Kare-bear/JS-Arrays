@@ -64,11 +64,11 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 function evenFinder(nums){
   for(var i=0;i<nums.length;i++){
     if(nums[i] %2 !==0){
-      delete nums[i];
+      nums.splice(i,1);
     }
   }return nums;
   
-}evenfinder(nums);
+}evenFinder(nums);
 
 
 
